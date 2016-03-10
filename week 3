@@ -1,0 +1,9 @@
+def ndigits(x):
+    """
+    takes an integer 'x'(either positive or negative), return the number
+    of digits in the integer x.
+    """
+    # base case is x = 0 if x is positive and x = -1 if x is negative.
+    if x == 0 or x == -1:
+        return 0
+    return 1 + ndigits(x/10)
